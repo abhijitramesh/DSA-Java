@@ -1,5 +1,5 @@
 
-public class Driver {
+public class DriverDoublyLinkedList {
 	
 	public static void main(String[] args) {
 		DoublyLinkedList dl = new DoublyLinkedList();

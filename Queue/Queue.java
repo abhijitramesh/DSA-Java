@@ -1,7 +1,7 @@
 
 public class Queue {
-	Node front = null;
-	Node rear = null;
+	NodeQueue front = null;
+	NodeQueue rear = null;
 	
 Queue()
 {
@@ -14,7 +14,7 @@ boolean isEmpty() {
 }
 
 void enqueue(int data) {
-	Node temp = new Node(data);
+	NodeQueue temp = new NodeQueue(data);
 	
 	if(isEmpty()) {
 		front=rear=temp;
@@ -39,7 +39,7 @@ void deque() {
 	}
 	}
 public void Print() {
-	Node temp = front;
+	NodeQueue temp = front;
 	while(temp!=null) {
 		System.out.print(temp.data +"<-");
 		temp=temp.next;

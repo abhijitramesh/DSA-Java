@@ -1,7 +1,7 @@
-public class Node {
+public class NodeCircularqueue {
 int data;
 Node next;
-Node(int data){
+NodeCircularqueue(int data){
 	this.data = data;
 	this.next = null;
 }

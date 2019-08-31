@@ -1,8 +1,8 @@
 
-public class Stack {
-public Node top = null;
+public class StackRAP {
+public NodeRAP top = null;
 public void push(char d) {
-	Node newnode = new Node(d);
+	NodeRAP newnode = new NodeRAP(d);
 	newnode.next = top;
 	top = newnode;
 }
@@ -15,9 +15,9 @@ public void pop() {
 	}
 }
 public void Traversal() {
-	Node temp = top;
+	NodeRAP temp = top;
 	while(temp!=null) {
-		System.out.printf("%d<-",temp.data);
+		System.out.printf("%c<-",temp.data);
 		temp=temp.next;
 }
 }

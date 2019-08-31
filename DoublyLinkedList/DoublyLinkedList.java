@@ -1,10 +1,10 @@
 
 public class DoublyLinkedList {
 	
-	public Node head = null;
+	public NodeDoublyLinkedList head = null;
 	
 	public void Insert_at_head(int data) {
-		Node newnode = new Node(data);
+		NodeDoublyLinkedList newnode = new NodeDoublyLinkedList(data);
 		if(head != null) {
 		head.prev = newnode;
 		}
@@ -13,8 +13,8 @@ public class DoublyLinkedList {
 		head = newnode;
 	}
 	public void Insert_at_tail(int data) {
-		Node newnode = new Node(data);
-		Node temp = head;
+		NodeDoublyLinkedList newnode = new NodeDoublyLinkedList(data);
+		NodeDoublyLinkedList temp = head;
 		if(temp == null) {
 			newnode.prev = null;
 			newnode.next = null;
@@ -29,8 +29,8 @@ public class DoublyLinkedList {
 	}
 	}
 	public void Insert_at_position(int pos,int data) {
-		Node temp = head;
-		Node newnode =new  Node(data);
+		NodeDoublyLinkedList temp = head;
+		NodeDoublyLinkedList newnode =new  NodeDoublyLinkedList(data);
 		if(head == null) {this.Insert_at_head(data);}
 		else {
 		for(int i =0;i<pos-1;i++) {
@@ -46,7 +46,7 @@ public class DoublyLinkedList {
 		}
 	}
 	public void Delete(int k) {
-		Node temp = head;
+		NodeDoublyLinkedList temp = head;
 		if(k == 1) {
 			temp.next.prev = null;
 			head = temp.next;
@@ -69,7 +69,7 @@ public class DoublyLinkedList {
 		
 	}
 	public void Traversal() {
-		Node temp = head;
+		NodeDoublyLinkedList temp = head;
 		while(temp != null) {
 			System.out.printf("%d<-",temp.data);
 			temp=temp.next;

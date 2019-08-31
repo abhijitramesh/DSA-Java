@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Palindrome {
 
 	public static void main(String[] args) {
-		Stack s1 = new Stack();
+		StackRAP s1 = new StackRAP();
 		Scanner sc = new Scanner(System.in); 
 		String name = sc.nextLine();
 		boolean flag = false;

@@ -1,5 +1,5 @@
 
-public class Driver {
+public class DriverCircularqueue {
 	
 	public static void main(String args[]) {
 		Circularqueue q = new Circularqueue();

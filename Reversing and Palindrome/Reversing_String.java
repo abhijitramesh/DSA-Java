@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class Reversing_String {
 
 	public static void main(String[] args) {
-		Stack s1 = new Stack();
+		StackRAP s1 = new StackRAP();
 		Scanner sc = new Scanner(System.in); 
 		String name = sc.nextLine(); 
 		for(int i=0;i<name.length();i++) {

@@ -1,5 +1,5 @@
 
-public class Driver {
+public class DriverQueue {
 	
 	public static void main(String args[]) {
 		Queue q = new Queue(); 

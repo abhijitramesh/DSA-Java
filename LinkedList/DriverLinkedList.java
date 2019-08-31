@@ -1,5 +1,5 @@
 
-public class Driver {
+public class DriverLinkedList {
 
 	public static void main(String[] args) {
 

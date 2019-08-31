@@ -1,5 +1,5 @@
 
-public class Driver {
+public class DriverBST {
 	
 	
 	public static void main(String args[])throws Exception {
