@@ -15,7 +15,17 @@ public class Stack {
 		}
 	}
 	public void top() {
+		if(top == null){System.out.println("-1");}
+		else{
 		System.out.println(top.data);
+		}
+	}
+	public void pop() {
+		if(top == null){System.out.println("-1");}
+		else{
+		System.out.println(top.data);
+		top = top.next;
+		}
 	}
 
 }
